@@ -1,0 +1,16 @@
+.input {
+	padding: 3px;
+	font-size: 14px;
+	color: #333;
+	border: 1px solid #aaa;
+	margin-bottom: 2px;
+}
+
+#main {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Hevletica';
+	font-weight: 300;
+}
