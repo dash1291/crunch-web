@@ -7,10 +7,51 @@
 }
 
 #main {
+	padding: 0 200px 0 200px;
+}
+
+li {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+
+h1, h2 {
+	font-family: 'Palatino';
+	font-weight: 300;
+}
+
+.list-item-heading {
+	float: left;
+	margin-bottom: 0;
+}
+
+li p {
+	font-family: "Georgia";
+	font-size: 19px;
+	color: #555;
+	margin: 10px 0 0 60px;
+}
+
+.bullet {
+	float: left;
+	background-color: red;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 100px;
+	width: 40px;
+	margin: 15px 20px 0 0;
 	text-align: center;
 }
 
-h1 {
-	font-family: 'Palatino';
-	font-weight: 300;
+.clearfix {
+	clear: both;
+}
+
+pre {
+	padding: 10px;
+	margin-left: 50px;
+	background-color: #eee;
+	margin-bottom: 20px;
 }

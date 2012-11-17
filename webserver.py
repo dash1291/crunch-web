@@ -5,7 +5,7 @@ from crunch.crunchauth import add_account, get_user
 
 class index(tornado.web.RequestHandler):
     def get(self):
-        self.write("Hello, world")
+        self.render('templates/index.html')
 
 class register(tornado.web.RequestHandler):
 	def get(self):
