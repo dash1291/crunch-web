@@ -14,7 +14,7 @@ class register(tornado.web.RequestHandler):
 	def post(self):
 		error = None
 		try:
-			username = self.request.arguments['username']
+			username = self.request.arguments['username'][0]
 			if len(username) == 0:
 				raise Exception('bad username')
 
@@ -26,13 +26,13 @@ class register(tornado.web.RequestHandler):
 				error = 'A non-zero length username is required.'
 
 		try:
-			password = self.request.arguments['password']
+			password = self.request.arguments['password'][0]
 			if len(password) == 0:
 				raise Exception('bad password')
 		except:
 			if not error == None:
 				error = 'A non-zero length password is required.'
-		
+		print username
 		add_account(username, password)
 		self.render('templates/register.html', error=error)
 
