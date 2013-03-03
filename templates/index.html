@@ -38,6 +38,12 @@
 						<p>
 							You'll need to save a tiny piece of configuration as Python code, so crunch will know how to connect to a server.
 						</p>
+						{% if code %}
+						<div>
+							<p>Save the following code as client.py</p>
+							<pre>{{ code }}</pre>
+						</div>
+						{% end %}
 					</div>
 				</li>
 				<li>
