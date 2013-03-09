@@ -36,11 +36,11 @@
 						<div class="bullet">3</div><h2 class="list-item-heading">Prepare your client</h2>
 						<div class="clearfix"></div>
 						<p>
-							You'll need to save a tiny piece of configuration as Python code, so crunch will know how to connect to a server.
+							You'll need to save a tiny piece of configuration as Python code, so Crunch knows how to connect to a server.
 						</p>
 						{% if code %}
 						<div>
-							<p>Save the following code as client.py</p>
+							<p>Save the following code as `client.py`</p>
 							<pre>{{ code }}</pre>
 						</div>
 						{% end %}
@@ -50,6 +50,8 @@
 					<div>
 						<div class="bullet">4</div><h2 class="list-item-heading">Fire!</h2>
 						<div class="clearfix"></div>
+						<p>Run `client.py`:</p>
+						<code>$ python client.py</code>
 					</div>
 				</li>
 			</ul>
