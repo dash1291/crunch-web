@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/static/css/style.css"/>
+		<script src="/static/js/register.js"></script>
+		<title>Crunchweb</title>
+	</head>
+	<body>
+		<section id="main">
+			<h1>Delete your Crunch account here</h1>
+			{% if error %}
+			<div class="error">{{ error }}</div>
+			{% end %}
+			<form method="POST" action="/delete/">
+				<div><input class="input" type="text" size="20" name="username" placeholder="Username"/></div>
+				<div><input type="password" class="input" size="20" name="password" placeholder="Password"/></div>
+				<div><input type="submit" class="button" value="Register"/></div>
+			</form>
+		</section>
+	</body>
+</html>

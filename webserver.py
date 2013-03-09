@@ -39,8 +39,7 @@ class register(tornado.web.RequestHandler):
         if error == None:
             t = Template(open('templates/client_sample.html',
                 'r').read())
-            client_sample_code = t.generate(username=username,
-                password=password)
+            client_sample_code = t.generate(username=username)
 
             self.render('templates/index.html', code=client_sample_code)
         else:
